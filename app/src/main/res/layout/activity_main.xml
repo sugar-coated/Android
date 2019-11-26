@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/fragment"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#CDC5BF"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_button_group"
+        android:background="#F4A460"
+        android:paddingTop="5dp"
+
+        >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/home_radio_button_selected"
+        android:text="小小事件"
+        android:id="@+id/home"
+        android:gravity="center"
+        android:checked="true"
+        android:textColor="@drawable/radio_button_selected_color"
+        android:textSize="10dp"
+
+
+        />
+
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/add_radio_button_selected"
+            android:text="添加事件"
+            android:button="@null"
+            android:id="@+id/add"
+            android:gravity="center"
+            android:textColor="@drawable/radio_button_selected_color"
+            android:textSize="10dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/delete_radio_button_selected"
+            android:text="你的信息"
+            android:button="@null"
+            android:id="@+id/delete"
+            android:gravity="center"
+            android:textColor="@drawable/radio_button_selected_color"
+            android:textSize="10dp"
+            />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

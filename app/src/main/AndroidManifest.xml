@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="coursework.luyu.no217">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tuoge"
+        android:label="坨哥大作业"
+        android:roundIcon="@mipmap/tuoge"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".Activities.RegisterForVisitor"></activity>
+        <activity android:name=".Activities.ChangeInformation" />
+        <activity android:name=".Activities.GiveMoneyToMr_TG" />
+        <activity android:name=".Activities.ChooseToLogin" />
+        <activity
+            android:name=".ui.login.CheckPerson"
+            android:label="@string/title_activity_check_person" />
+
+        <service
+            android:name=".Service.ShowEventService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Activities.EventDetils" />
+        <activity android:name=".Activities.CreateContent" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CreateContent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:background="@mipmap/to_add"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/new_title"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:hint="在此处输入标题"
+        />
+
+
+
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/submit"
+         android:background="@mipmap/submit"
+         android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+
+         />
+
+
+
+
+
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#FFD700"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@mipmap/little_biaoqian"/>
+
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/type"
+           android:textColor="#2E8B57"
+           android:layout_gravity="center"
+           android:textSize="20dp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/time"
+           android:layout_marginLeft="80dp"
+          android:layout_marginTop="30dp"
+
+           />
+
+   </LinearLayout>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+       android:minLines="8"
+       android:maxLines="10"
+       android:scrollbars="vertical"
+       android:hint="在此处输入记录内容"
+    />
+
+
+
+</LinearLayout>

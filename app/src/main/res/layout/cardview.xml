@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cardview_style"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/card"
+
+
+
+    >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:background="@drawable/cardview_style"
+          android:orientation="vertical"
+
+          >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/carImage"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+
+
+                />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardTime"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="9dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="5dp"
+                android:text="坨哥帅帅帅！"
+                android:textColor="#000000"
+
+                android:textSize="15dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:id="@+id/card_content"
+              android:layout_weight="1"
+              android:padding="5dp"
+              android:paddingTop="0dp"
+              android:textColor="#000"
+              />
+
+
+
+
+
+
+      </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+

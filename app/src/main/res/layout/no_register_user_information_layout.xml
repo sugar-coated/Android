@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#8a8a8a"
+        android:layout_centerInParent="true"
+        android:text="你的小本本还没有进行加密"
+        android:id="@+id/zhu"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要加密"
+        android:layout_below="@+id/zhu"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_stytle"
+        android:id="@+id/button"
+        />
+
+</RelativeLayout>

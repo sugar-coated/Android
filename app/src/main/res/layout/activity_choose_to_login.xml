@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ChooseToLogin"
+    android:background="@mipmap/face"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成为坨哥小本本使用人"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:id="@+id/login_title"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_title"
+        android:background="@drawable/register_and_login_button_style"
+        android:id="@+id/username"
+        android:layout_margin="15dp"
+
+    >
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="9"
+            android:hint="称号"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:textColor="#fff"
+            android:selectAllOnFocus="true"
+            android:textSize="19dp"
+            android:id="@+id/name"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/username"
+        android:background="@drawable/register_and_login_button_style"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15dp"
+
+        android:id="@+id/usernamePlus"
+        >
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="9"
+            android:hint="通行符"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:id="@+id/passwordPlus"
+
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@+id/usernamePlus"
+        android:layout_margin="15dp"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名登录:(填写信息后勾选然后点击我)----------->"
+            android:background="@drawable/register_and_login_button_style"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:id="@+id/loginPlus"
+            />
+
+        <CheckBox
+            android:id="@+id/check_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无名登录:(你不想要名分勾选之后点击我)--------->"
+            android:background="@drawable/register_and_login_button_style"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:id="@+id/mima"
+            />
+
+        <CheckBox
+            android:id="@+id/check_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

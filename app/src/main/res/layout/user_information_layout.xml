@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/show_user_information"
+        android:background="@mipmap/tuoge_user"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/touxiang"
+            android:src="@mipmap/tuoge_face"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="坨哥真帅"
+            android:layout_below="@+id/touxiang"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:textColor="#000"
+            android:id="@+id/user_name"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_user_information"
+        android:orientation="vertical"
+        android:id="@+id/item_select"
+        android:layout_marginTop="40dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/message1"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/record_times"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EEEEE0"
+                android:text="你已经记事的次数:0"
+                android:textSize="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:id="@+id/w_times"
+                />
+
+            <ImageView
+                android:id="@+id/new_update"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="22dp"
+                android:src="@mipmap/update"
+                android:text="0"
+                android:layout_centerVertical="true"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/message2"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/delete_times"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EEEEE0"
+                android:text="你已经完成的事件数量:0"
+                android:textSize="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                android:id="@+id/d_times"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/update"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/delete_update"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/message3"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/rewrite_power"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EEEEE0"
+                android:text="修改账户密码"
+                android:textSize="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/change_id"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/message4"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shang_tuoge"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EEEEE0"
+                android:text="你想打赏坨哥"
+                android:textSize="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#000"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dashang"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

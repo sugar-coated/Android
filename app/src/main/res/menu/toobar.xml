@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<item
+    android:id="@+id/delete_details"
+    android:icon="@mipmap/delete_details"
+    android:title="删除当前事件"
+    app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/yun"
+        android:icon="@mipmap/yun"
+        android:title="添加到提醒"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/cancel"
+        android:title="取消通知"
+        android:icon="@mipmap/cancel_service"
+        app:showAsAction="always"
+        />
+
+
+     <item
+         android:id="@+id/rewrite"
+         android:icon="@mipmap/rewrite"
+         android:title="修改"
+         app:showAsAction="always"
+
+         />
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f9e9c3"
+    tools:context=".Activities.EventDetils">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/actionBarOfDetails"
+        android:background="#63B8FF"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFF00"
+
+        />
+
+        />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected_cardView_title"
+            android:background="#f9e9c3"
+            android:text="陈思琪大傻逼"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="19dp"
+            />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/selected_cardView_time"
+             android:text="2019.11.24"
+             android:layout_gravity="center"
+             android:layout_margin="3dp"
+             />
+
+
+        <EditText
+            android:id="@+id/selected_cardView_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="8"
+            android:maxLines="100"
+            android:scrollbars="vertical"
+            android:text="坨哥真帅，无敌的帅，坨哥牛逼"
+
+            />
+
+
+
+</LinearLayout>

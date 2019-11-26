@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008577"
+    >
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:background="@drawable/add_gragment_title"
+
+     >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingBottom="5dp"
+         android:text="事件类型"
+         android:textSize="25dp"
+         android:drawableRight="@mipmap/moon"
+         android:layout_gravity="center_vertical"
+
+
+         />
+
+
+ </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight= "-50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="随心记录"
+            android:drawableLeft="@mipmap/suixin"
+            android:background="@drawable/button_stytle"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:id="@+id/casual"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="生活小日常"
+            android:drawableLeft="@mipmap/shenghuo"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/life"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="繁忙的工作"
+            android:drawableLeft="@mipmap/gongzuo"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/work"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="杂七杂八的琐事"
+            android:drawableLeft="@mipmap/suoshi"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/things"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="学习提醒"
+            android:drawableLeft="@mipmap/xuexi"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/study"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:text="又花钱了"
+            android:drawableLeft="@mipmap/huaqian"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/cost"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:text="其他"
+            android:drawableLeft="@mipmap/qita"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_stytle"
+            android:textSize="18dp"
+            android:id="@+id/other"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
