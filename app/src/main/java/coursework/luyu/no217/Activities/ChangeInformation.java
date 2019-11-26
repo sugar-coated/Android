@@ -30,8 +30,8 @@ public class ChangeInformation extends AppCompatActivity implements View.OnClick
     @BindView(R.id.input_password2_217)
     EditText inputPassword2217;
 
-    private SharedPreferences sharedPreferences;
-    private SharedPreferences.Editor editor;
+    private SharedPreferences sharedPreferences217;
+    private SharedPreferences.Editor editor217;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,11 +109,11 @@ public class ChangeInformation extends AppCompatActivity implements View.OnClick
                 Toast.makeText(this, "两次输入的密码不一致", Toast.LENGTH_LONG).show();
 
             } else {
-                sharedPreferences = this.getSharedPreferences("user1", MODE_PRIVATE);
+                sharedPreferences217 = this.getSharedPreferences("user1", MODE_PRIVATE);
 
-                editor = sharedPreferences.edit();
-                editor.putString("password", input_password1_217);
-                editor.apply();
+                editor217 = sharedPreferences217.edit();
+                editor217.putString("password", input_password1_217);
+                editor217.apply();
 
                 Toast.makeText(this, "更新成功", Toast.LENGTH_LONG).show();
 

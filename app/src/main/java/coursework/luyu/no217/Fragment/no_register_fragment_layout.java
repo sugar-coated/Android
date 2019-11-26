@@ -1,15 +1,9 @@
 package coursework.luyu.no217.Fragment;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import coursework.luyu.no217.Activities.RegisterForVisitor;
 import coursework.luyu.no217.JavaBeans.Event;
 import coursework.luyu.no217.R;

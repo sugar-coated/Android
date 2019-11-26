@@ -65,7 +65,6 @@ public class user_information extends Prototype_fragment {
         int flag = isRegister();
         Log.d("调试信息", "当前已经成功进入函数" + flag);
 
-        Log.d("调试信息", "当前已经成功进入函数1");
         delete_fragment_view217 = View.inflate(mContext217, R.layout.user_information_layout, null);
 
         //绑定ButterKnife
@@ -73,8 +72,6 @@ public class user_information extends Prototype_fragment {
 
         //监听器
         listener();
-
-
         return delete_fragment_view217;
     }
 
@@ -85,10 +82,10 @@ public class user_information extends Prototype_fragment {
 
     //根据sp中的只判断加载那个布局
     private int isRegister() {
-        int flag = 0;
+        int flag217 = 0;
         SharedPreferences sharedPreferences217 = mContext217.getSharedPreferences("user1", Context.MODE_PRIVATE);
-        flag = sharedPreferences217.getInt("keyForLayout", -1);
-        return flag;
+        flag217 = sharedPreferences217.getInt("keyForLayout", -1);
+        return flag217;
     }
 
     @Override
@@ -117,7 +114,6 @@ public class user_information extends Prototype_fragment {
         username217 = sharedPreferences217.getString("username", "null");
         record_times217 = sharedPreferences217.getInt("record_times", 0);
         finish_times217 = sharedPreferences217.getInt("finish_times", 0);
-
 
     }
 
@@ -164,17 +160,17 @@ public class user_information extends Prototype_fragment {
     }
 
     private void update(int mode){
-        SharedPreferences sharedPreferences = mContext217.getSharedPreferences("user1",Context.MODE_PRIVATE);
-        int value= 0;
+        SharedPreferences sharedPreferences217 = mContext217.getSharedPreferences("user1",Context.MODE_PRIVATE);
+        int value217 = 0;
         switch (mode){
 
             case 0:
-                value = sharedPreferences.getInt("record_times",-1);
-                wTimes217.setText("你已经记事的次数:"+value);
+                value217 = sharedPreferences217.getInt("record_times",-1);
+                wTimes217.setText("你已经记事的次数:"+value217);
                 break;
             case 1:
-                value = sharedPreferences.getInt("finish_times",-1);
-                dTimes217.setText("你已经完成的事件数量:"+value);
+                value217 = sharedPreferences217.getInt("finish_times",-1);
+                dTimes217.setText("你已经完成的事件数量:"+value217);
                 break;
                 default:
                     break;

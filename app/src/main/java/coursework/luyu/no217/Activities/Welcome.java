@@ -35,7 +35,6 @@ public class Welcome extends Activity {
                 Log.d("调试信息", "已经进去点击事件");
 
                 isRegister();
-
                 finish();
 
 
@@ -76,8 +75,8 @@ public class Welcome extends Activity {
             super.handleMessage(msg);
             time217 = time217 -1000;
 
-            String number = String.valueOf(time217/1000);
-            close217.setText("关闭 "+ number);
+            String number217 = String.valueOf(time217/1000);
+            close217.setText("关闭 "+ number217);
 
             removeMessages(0);
 

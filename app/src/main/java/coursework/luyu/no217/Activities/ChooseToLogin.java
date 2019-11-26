@@ -25,19 +25,19 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
     @BindView(R.id.login_title)
     TextView loginTitle;
     @BindView(R.id.name)
-    EditText name;
+    EditText name217;
     @BindView(R.id.loginPlus)
-    Button loginPlus;
+    Button loginPlus217;
     @BindView(R.id.check_login)
-    CheckBox checkLogin;
+    CheckBox checkLogin217;
     @BindView(R.id.mima)
-    Button mima;
+    Button mima217;
     @BindView(R.id.check_pass)
-    CheckBox checkPass;
+    CheckBox checkPass217;
     @BindView(R.id.passwordPlus)
-    EditText passwordPlus;
+    EditText passwordPlus217;
     @BindView(R.id.login)
-    RelativeLayout login;
+    RelativeLayout login217;
 
     private  SharedPreferences sharedPreferences217;
     private  SharedPreferences.Editor editor217;
@@ -51,8 +51,8 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
         sharedPreferences217 = this.getSharedPreferences("user1",MODE_PRIVATE);
         editor217 = sharedPreferences217.edit();
 
-        loginPlus.setOnClickListener(this);
-        mima.setOnClickListener(this);
+        loginPlus217.setOnClickListener(this);
+        mima217.setOnClickListener(this);
 
     }
 
@@ -88,7 +88,7 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
     * */
     private void noLoginAndRegister() {
 
-        if(checkPass.isChecked()){
+        if(checkPass217.isChecked()){
 
             if(sharedPreferences217.getInt("key",-1) != 1){
 
@@ -120,10 +120,10 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
     private void loginAndRegister() {
 
 
-        String username217 = name.getText().toString();
-        String password217 = passwordPlus.getText().toString();
+        String username217 = name217.getText().toString();
+        String password217 = passwordPlus217.getText().toString();
 
-        if (checkLogin.isChecked()) {
+        if (checkLogin217.isChecked()) {
 
             if(username217.equals("称号")|password217.equals("通行符")|username217.equals(null)|password217.equals(null)|username217.equals("")|password217.equals("")){
 
@@ -133,10 +133,7 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
 
                 if(sharedPreferences217.getInt("key",-1) == 1){
 
-
                     Toast.makeText(this,"你之前创建账户，请用账户密码登录",Toast.LENGTH_LONG).show();
-
-
 
                 }else{
 
@@ -189,22 +186,17 @@ public class ChooseToLogin extends AppCompatActivity implements View.OnClickList
 
               toMainActivity();
               //结束加载进程
-
-
           }else{
 
               Toast.makeText(this,"输入错误，请重新输入",Toast.LENGTH_LONG).show();
 
           }
-
         }
-
     }
 
     private void toMainActivity() {
-
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
+        Intent intent217 = new Intent(this,MainActivity.class);
+        startActivity(intent217);
          finish();
     }
 

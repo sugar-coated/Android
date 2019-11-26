@@ -123,8 +123,8 @@ public class EventDetils extends AppCompatActivity  {
 
             case R.id.cancel:
 
-                Intent intent_stop = new Intent(this,ShowEventService.class);
-                stopService(intent_stop);
+                Intent intent_stop217 = new Intent(this,ShowEventService.class);
+                stopService(intent_stop217);
                 break;
 
             case R.id.rewrite:
@@ -165,7 +165,6 @@ public class EventDetils extends AppCompatActivity  {
                         switch (type){
 
                             case 0:
-
                                 manager217.delete(position217);
                                 break;
                             case 1:

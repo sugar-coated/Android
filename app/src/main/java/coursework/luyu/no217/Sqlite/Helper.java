@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class Helper extends SQLiteOpenHelper {
 
-    private static String createEvent = "create table event(\n" +
+    private static String createEvent217 = "create table event(\n" +
             "id integer primary Key autoincrement,\n" +
             "title varchar(200) not null,\n" +
             "time varchar(50) not null,\n" +
@@ -25,7 +25,7 @@ public class Helper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-           db.execSQL(createEvent);
+           db.execSQL(createEvent217);
     }
 
     @Override

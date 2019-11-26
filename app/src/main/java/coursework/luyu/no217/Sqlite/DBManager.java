@@ -104,21 +104,21 @@ public class DBManager {
 
     public  void  rewrite(String condition,int position,String title,String content,String flag){
 
-        ContentValues values = new ContentValues();
+        ContentValues values217 = new ContentValues();
 
 
         switch (flag){
             case "id":
-                values.put("position",String.valueOf(position));
-                db217.update("event",values,"id=?",new String[]{condition});
+                values217.put("position",String.valueOf(position));
+                db217.update("event",values217,"id=?",new String[]{condition});
 
                 break;
 
             case "position":
 
-                values.put("content",content);
-                values.put("title",title);
-                db217.update("event",values,"position=?",new String[]{condition});
+                values217.put("content",content);
+                values217.put("title",title);
+                db217.update("event",values217,"position=?",new String[]{condition});
 
                 break;
 

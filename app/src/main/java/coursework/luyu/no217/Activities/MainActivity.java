@@ -31,14 +31,10 @@ public class MainActivity extends FragmentActivity{
     private Fragment saveFragment217;
     private  FragmentTransaction fragmentTransaction217;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         home217 = (RadioButton)findViewById(R.id.home);
         add217 = (RadioButton)findViewById(R.id.add);

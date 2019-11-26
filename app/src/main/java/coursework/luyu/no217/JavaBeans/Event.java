@@ -7,14 +7,14 @@ public class Event  {
     public String time217;
     public String title217;
     public String position217;
-    public int id;
+    public int id217;
 
     public int getId() {
-        return id;
+        return id217;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id217 = id;
     }
 
     public String getType217() {

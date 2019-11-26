@@ -28,23 +28,28 @@ public class ShowEventService extends Service {
         title217 = intent.getStringExtra("title");
         content217 = intent.getStringExtra("content");
 
-        if(Build.VERSION.SDK_INT>=26){
-            NotificationManager manager=(NotificationManager)getSystemService (NOTIFICATION_SERVICE);
-            NotificationChannel channel=new NotificationChannel (ID,"tuoge",NotificationManager.IMPORTANCE_HIGH);
-            manager.createNotificationChannel (channel);
-            Notification notification=new Notification.Builder (this,ID)
-                    .setContentTitle (title217)
-                    .setSmallIcon (R.mipmap.ic_launcher)
-                    .setContentText(content217)
-                   /* .setStyle(new NotificationCompat.BigTextStyle().bigText(content217))*/
-                    .setLargeIcon (BitmapFactory.decodeResource (getResources (),R.mipmap.ic_launcher))
-                    .build ();
-            startForeground (1,notification);
-        }else{
-
-        }
+        show_focus(title217,content217);
 
         return super.onStartCommand(intent, flags, startId);
+    }
+
+    private void show_focus(String title217, String content217){
+        //判断当前sdk版本是否为26以上
+        if(Build.VERSION.SDK_INT>=26){
+
+            NotificationManager manager217 = (NotificationManager)getSystemService (NOTIFICATION_SERVICE);
+            NotificationChannel channel217 = new NotificationChannel (ID,"tuoge",NotificationManager.IMPORTANCE_HIGH);
+            manager217.createNotificationChannel (channel217);
+            Notification notification217 = new Notification.Builder (this,ID)
+                    .setContentTitle (this.title217)
+                    .setSmallIcon (R.mipmap.focus)
+                    .setContentText(this.content217)
+                    //.setStyle(new NotificationCompat.BigTextStyle().bigText(content217))
+                    .setLargeIcon (BitmapFactory.decodeResource (getResources (),R.mipmap.ic_launcher))
+                    .build ();
+            startForeground (1,notification217);
+        }
+
     }
 
     @Override

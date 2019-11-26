@@ -18,28 +18,28 @@ import coursework.luyu.no217.Sqlite.Helper;
 public class CreateContent extends Activity implements View.OnClickListener {
 
     @BindView(R.id.type)
-    TextView type;
+    TextView type217;
     private String currentTime217;
     private String event_type217;
     private String event_title217;
     private String event_time217;
     private String event_content217;
     private Helper helper217;
-    private String showEventType;
+    private String showEventType217;
     private DBManager dbManager217;
 
 
     @BindView(R.id.back)
-    TextView back;
+    TextView back217;
     @BindView(R.id.new_title)
-    EditText newTitle;
+    EditText newTitle217;
 
     @BindView(R.id.submit)
-    TextView submit;
+    TextView submit217;
     @BindView(R.id.time)
-    TextView time;
+    TextView time217;
     @BindView(R.id.content)
-    EditText content;
+    EditText content217;
 
 
 
@@ -54,16 +54,16 @@ public class CreateContent extends Activity implements View.OnClickListener {
         ButterKnife.bind(this);
 
         //获取类型
-        Intent intent = getIntent();
-        showEventType = intent.getStringExtra("EventType");
-        type.setText(showEventType);
+        Intent intent217 = getIntent();
+        showEventType217 = intent217.getStringExtra("EventType");
+        type217.setText(showEventType217);
 
         //显示当前时间
         setCurrentTime();
 
-        back.setOnClickListener(this);
-        submit.setOnClickListener(this);
-        back.setOnClickListener(this);
+        back217.setOnClickListener(this);
+        submit217.setOnClickListener(this);
+        back217.setOnClickListener(this);
 
 
     }
@@ -72,13 +72,13 @@ public class CreateContent extends Activity implements View.OnClickListener {
 
         Calendar calendar = Calendar.getInstance();
 
-        int month = calendar.get(Calendar.MONTH) + 1;
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int minute = calendar.get(Calendar.MINUTE);
+        int month217 = calendar.get(Calendar.MONTH) + 1;
+        int day217 = calendar.get(Calendar.DAY_OF_MONTH);
+        int hour217 = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute217 = calendar.get(Calendar.MINUTE);
 
-        currentTime217 = month + "." + day + " " + hour + ":" + minute;
-        time.setText(currentTime217);
+        currentTime217 = month217 + "." + day217 + " " + hour217 + ":" + minute217;
+        time217.setText(currentTime217);
     }
 
 
@@ -92,10 +92,10 @@ public class CreateContent extends Activity implements View.OnClickListener {
 
             case R.id.submit:
 
-                event_content217 = content.getText().toString();
+                event_content217 = content217.getText().toString();
                 event_time217 = currentTime217;
-                event_title217 = newTitle.getText().toString();
-                event_type217 = type.getText().toString();
+                event_title217 = newTitle217.getText().toString();
+                event_type217 = type217.getText().toString();
                 //调用操作数据库对象进行对数据插入
                 dbManager217.insert(event_title217, event_type217, event_time217, event_content217);
 

@@ -39,7 +39,7 @@ public class home_fragment extends Prototype_fragment {
 
         View home_fragment_view217 = View.inflate(mContext217, R.layout.home_fragment_layout, null);
 
-        //toolBar217 = (Toolbar) home_fragment_view217.findViewById(R.id.toolBar);
+
         recycler217 = (RecyclerView) home_fragment_view217.findViewById(R.id.recycler);
         floatActionButton = (FloatingActionButton) home_fragment_view217.findViewById(R.id.float_button);
         swipeRefreshLayout = (SwipeRefreshLayout)home_fragment_view217.findViewById(R.id.refresh_data);
@@ -63,8 +63,6 @@ public class home_fragment extends Prototype_fragment {
         DBManager dbManager217 = new DBManager(db217, mContext217);
         list217 = dbManager217.read(null);
 
-        isEmpty();
-
         GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext217, 2);
         recycler217.setLayoutManager(gridLayoutManager);
         cardViewAdapter = new CardViewAdapter(mContext217, list217,db217);
@@ -73,17 +71,6 @@ public class home_fragment extends Prototype_fragment {
         return null;
     }
 
-    private void isEmpty(){
-
-        if(list217.size()==0){
-
-          /*  TextView textView = new TextView(getActivity());
-            textView.setText("您还没有任何记录的事件哦~~，稍后再来吧!");
-
-             swipeRefreshLayout.addView(textView);*/
-
-        }
-    }
 
     private void initListener() {
 
