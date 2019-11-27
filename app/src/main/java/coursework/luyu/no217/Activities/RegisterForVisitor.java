@@ -83,9 +83,9 @@ public class RegisterForVisitor extends AppCompatActivity implements View.OnClic
 
              String name217 = newName217.getText().toString();
              String password217 = newPassword217.getText().toString();
-             String repearPassword217 = repeatNewPassword217.getText().toString();
+             String repeatPassword217 = repeatNewPassword217.getText().toString();
 
-             register(name217,password217,repearPassword217);
+             register(name217,password217,repeatPassword217);
 
 
                 break;
@@ -101,9 +101,9 @@ public class RegisterForVisitor extends AppCompatActivity implements View.OnClic
 
     }
 
-    private void register(String s, String name217, String password217) {
+    private void register(String name217, String password217, String repeatPassword217) {
 
-        if(name217.equals(password217)){
+        if(repeatPassword217.equals(password217)){
 
             SharedPreferences sharedPreferences217 = this.getSharedPreferences("user1",MODE_PRIVATE);
             SharedPreferences.Editor editor217 = sharedPreferences217.edit();

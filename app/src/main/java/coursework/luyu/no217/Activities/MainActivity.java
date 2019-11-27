@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import coursework.luyu.no217.Fragment.Prototype_fragment;
-import coursework.luyu.no217.Fragment.no_register_fragment_layout;
+import coursework.luyu.no217.Fragment.no_register_fragment;
 import coursework.luyu.no217.R;
 import coursework.luyu.no217.Fragment.add_fragment;
 import coursework.luyu.no217.Fragment.user_information;
@@ -74,7 +74,7 @@ public class MainActivity extends FragmentActivity{
 
         if(flag217==0){
 
-            fragment_list217.add(new no_register_fragment_layout());
+            fragment_list217.add(new no_register_fragment());
 
         }else if (flag217==1){
 
@@ -137,15 +137,7 @@ public class MainActivity extends FragmentActivity{
 
   //选项卡功能，实现对Fragment在不重复添加Fragment的情况下实现切换
     private void showSelectedFragment(Prototype_fragment selectedFragment217) {
-        Log.d("调试信息","当前进入选项卡函数");
 
-        if(saveFragment217==null){
-
-            Log.d("调试信息","saveFragment为空");
-        }else{
-
-            Log.d("调试信息","saveFragment为不为空");
-        }
 
          //判断保存Fragment和当前选择的Fragment是否相同
          if(saveFragment217 != selectedFragment217){

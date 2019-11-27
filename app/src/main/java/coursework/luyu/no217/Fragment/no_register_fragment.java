@@ -9,7 +9,7 @@ import coursework.luyu.no217.JavaBeans.Event;
 import coursework.luyu.no217.R;
 import coursework.luyu.no217.Sqlite.Helper;
 
-public class no_register_fragment_layout extends Prototype_fragment {
+public class no_register_fragment extends Prototype_fragment {
 
  private Button button;
 
@@ -45,6 +45,6 @@ public class no_register_fragment_layout extends Prototype_fragment {
         return null;
     }
 
-    public no_register_fragment_layout() {
+    public no_register_fragment() {
     }
 }
